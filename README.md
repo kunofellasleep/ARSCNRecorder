@@ -11,18 +11,55 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+* iOS 11.0+
+
 ## Installation
 
-ARSCNRecorder is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+**CocoaPods (iOS 11.0+)**
+
+You can use CocoaPods to install ARSCNRecorder by adding it to your Podfile:
 
 ```ruby
-pod 'ARSCNRecorder'
+platform :ios, '11.0'
+use_frameworks!
+
+target 'MyApp' do
+    pod 'ARSCNRecorder'
+end
+```
+## Usage
+
+**Initialization**
+
+```Swift
+import SwiftyJSON
 ```
 
-## Author
+```Swift
+let recorder = ARSCNRecorder()
+sceneView.delegate = recorder
+```
 
-kunofellasleep, kunodev@gmail.com
+```plist:info.plist
+<key>NSCameraUsageDescription</key>
+<string>...</string>
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>...</string>
+```
+
+**Start Recording**
+
+```Swift
+recorder.startRecording(sceneView, ARSCNRecorderOptions())
+```
+
+**Finish Recording**
+
+```Swift
+recorder.finishRecording(isSaveLibrary: true) { videoUrl in
+	print(videoUrl!)
+}
+```
 
 ## License
 
