@@ -111,7 +111,7 @@ public class ARSCNRecorder: NSObject {
     
 }
 
-public extension ARSCNRecorder: ARSCNViewDelegate {
+extension ARSCNRecorder: ARSCNViewDelegate {
     public func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         guard let writer = self.writer else {
             self.startTime = time
