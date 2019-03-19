@@ -32,7 +32,7 @@ end
 **Initialization**
 
 ```Swift
-import SwiftyJSON
+import ARSCNRecorder
 ```
 
 ```Swift
