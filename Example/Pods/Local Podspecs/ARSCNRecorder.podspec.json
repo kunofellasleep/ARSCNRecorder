@@ -1,0 +1,23 @@
+{
+  "name": "ARSCNRecorder",
+  "version": "0.1.0",
+  "summary": "Take videos of ARKit scene view.",
+  "description": "description",
+  "homepage": "https://github.com/kunofellasleep/ARSCNRecorder",
+  "swift_version": "4.2",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kunofellasleep": "kunodev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kunofellasleep/ARSCNRecorder.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "ARSCNRecorder/Classes/**/*"
+}

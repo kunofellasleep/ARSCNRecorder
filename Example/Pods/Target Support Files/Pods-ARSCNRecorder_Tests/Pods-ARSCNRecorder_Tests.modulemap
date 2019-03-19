@@ -1,0 +1,6 @@
+framework module Pods_ARSCNRecorder_Tests {
+  umbrella header "Pods-ARSCNRecorder_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

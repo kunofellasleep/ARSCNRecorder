@@ -1,0 +1,6 @@
+framework module ARSCNRecorder {
+  umbrella header "ARSCNRecorder-umbrella.h"
+
+  export *
+  module * { export * }
+}
